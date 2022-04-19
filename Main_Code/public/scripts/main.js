@@ -363,11 +363,13 @@ var userNameElement = document.getElementById('user-name');
 var signInButtonElement = document.getElementById('sign-in');
 var signOutButtonElement = document.getElementById('sign-out');
 var signInSnackbarElement = document.getElementById('must-signin-snackbar');
+let FMichigan = document.getElementById('butt');
 
 // Saves message on form submit.
 messageFormElement.addEventListener('submit', onMessageFormSubmit);
 signOutButtonElement.addEventListener('click', signOut);
 signInButtonElement.addEventListener('click', signIn);
+FMichigan.addEventListener('click', onMessageFormSubmit)
 
 // Toggle for the button.
 messageInputElement.addEventListener('keyup', toggleButton);
